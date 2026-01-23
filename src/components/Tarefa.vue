@@ -16,7 +16,7 @@ import ITarefa from '../interfaces/ITarefa'
 import Box from './Box.vue'
 
 export default defineComponent({
-  name: "TarefaF",
+  name: "Tarefa",
   components: {
     Cronometro,
     Box
