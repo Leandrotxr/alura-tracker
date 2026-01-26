@@ -1,6 +1,7 @@
 import Tarefas from "@/views/Tarefas.vue";
 import { createRouter, createWebHashHistory } from "vue-router";
 import Projetos from "@/views/Projetos.vue";
+import Formulario from "@/views/Projetos/Formulario.vue";
 
 const rotas = [
   {
@@ -12,6 +13,17 @@ const rotas = [
     path: '/projetos',
     name: 'Projetos',
     component: Projetos
+  },
+  {
+    path: '/projetos/novo',
+    name: 'Novo projetos',
+    component: Formulario
+  },
+  {
+    path: '/projetos/:id',
+    name: 'Editar projetos',
+    component: Formulario,
+    props: true
   }
 ]
 
