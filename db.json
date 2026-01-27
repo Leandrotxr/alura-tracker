@@ -11,9 +11,9 @@
   ],
   "tarefas": [
     {
-      "id": 1,
+      "id": "1",
       "duracaoEmSegundos": 4,
-      "descricao": "config ambiente",
+      "descricao": "config ambientea",
       "projeto": {
         "id": 77000000000,
         "nome": "teste"

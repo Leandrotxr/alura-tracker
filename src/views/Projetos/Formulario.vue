@@ -23,7 +23,7 @@ import { defineComponent } from "vue";
 
 import { TipoNotificacao } from "@/interfaces/INotificacao";
 
-import useNotificador from "@/hooks/notificator";
+import useNotificador from "@/hooks/notificador";
 import { ALTERAR_PROJETO, CADASTRAR_PROJETO } from "@/store/tipo-acoes";
 import { useRouter } from 'vue-router'
 
@@ -36,7 +36,7 @@ export default defineComponent({
   },
   mounted() {
     if (this.id) {
-      const projeto = this.store.state.projetos.find(
+      const projeto = this.store.state.projeto.projetos.find(
         (proj) => proj.id == this.id
       );
       this.nomeDoProjeto = projeto?.nome || "";
@@ -72,7 +72,8 @@ export default defineComponent({
   },
   setup() {
     const store = useStore();
-    const router = useRouter()
+    const router = useRouter();
+
     const { notificar } = useNotificador();
     return {
       store,
