@@ -8,5 +8,25 @@
       "id": "2acf",
       "nome": "teste11"
     }
+  ],
+  "tarefas": [
+    {
+      "id": 1,
+      "duracaoEmSegundos": 4,
+      "descricao": "config ambiente",
+      "projeto": {
+        "id": 77000000000,
+        "nome": "teste"
+      }
+    },
+    {
+      "id": "160e",
+      "duracaoEmSegundos": 2,
+      "descricao": "refatoração de tarefas",
+      "projeto": {
+        "id": "77e9",
+        "nome": "teste"
+      }
+    }
   ]
 }
